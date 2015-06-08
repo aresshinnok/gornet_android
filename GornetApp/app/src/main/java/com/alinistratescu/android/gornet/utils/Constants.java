@@ -17,18 +17,18 @@ public class Constants {
     public static final int MENU_IDX_CONTACT = 3;
 
     // Application log tag
-    public static final String TAG = "ZEBRA";
+    public static final String TAG = "GORNET";
     // Application log tag for Google Analytics
     public static final String GA_TAG = TAG + ".GA";
 
     public static final String CONTACT_PHONE_NUMBER = "0314329996";
     public static final String CONTACT_CALL_CENTER_PHONE_NUMBER = "0314394099";
-    public static final String CONTACT_EMAIL = "contact@zebrapay.ro";
+    public static final String CONTACT_EMAIL = "alinistratescu@gmail.com";
     public static final String CONTACT_SUBJECT = "Solicitare contact";
 
     public static final Logger.ENVIRONMENT logEnvironment = Logger.ENVIRONMENT.DEVELOPMENT;
 
-    public static final String PREFS_BASE = "ZEBRA_PAY";
+    public static final String PREFS_BASE = "GORNET_PREF";
 
     public static final int TIME_BETWEEN_CLICKS = 2000;
 
@@ -45,7 +45,7 @@ public class Constants {
 
     public static final long ONE_DAY_TIME_IN_MILIS = 24 * 60 * 60 * 1000;
 
-    public static final String LOCATION_URL = "http://";
+    public static final String LOCATION_URL = "http://alinistratescu.com";
     public static final String FEED_URL = "https://";
-    public static final String BASE_PICTURE_URL = "https://legacymobileapp.zebrapay.ro/";
+    public static final String BASE_PICTURE_URL = "http://alinistratescu.com/";
 }
