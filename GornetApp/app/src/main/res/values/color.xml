@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_color">#2a4d7a</color>
+    <color name="griCCC">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="colorAccent">@color/bringo_yellow</color>
+    <color name="colorControlActivated">@color/bringo_yellow</color>
+    <color name="colorControlHighlight">@color/blue_2a4d7a</color>
+    <color name="colorButtonNormal">@color/bringo_yellow</color>
+    <color name="colorSwitchThumbNormal">@color/white_opacity_90</color>
+
+    <!-- bringo identity colors -->
+
+    <color name="blue_2a4d7a">#2a4d7a</color>
+
+    <!-- contact text color -->
+    <color name="orange_fec033">#fec033</color>
+
+    <!-- progress dialog color -->
+    <color name="bringo_yellow">#FFFDB827</color>
+
+
+    <!-- grays -->
+    <color name="gray_665b5E">#665b5E</color>
+
+    <!-- route map color-->
+    <color name="gray_bdbbbc">#bdbbbc</color>
+    <color name="progress_delegate_background">#99000000</color>
+
+
+    <!-- whites -->
+    <color name="white_opacity_90">#E6FFFFFF</color>
+
+    <!-- pop up dialog -->
+    <color name="gray_b3">#b3b3b3</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_6c">#6c6c6c</color>
+</resources>

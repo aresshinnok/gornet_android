@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">ZebraPay</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="menu_titles">
+        <item>Servicii</item>
+        <item>Langa mine</item>
+        <item>Harta</item>
+        <item>Contact</item>
+    </string-array>
+
+    <string name="press_again_to_exit">Mai apasă o dată pentru a ieși</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ico_servicii</item>
+        <item>@drawable/ico_langa_mine</item>
+        <item>@drawable/ico_harta</item>
+        <item>@drawable/ico_contact</item>
+    </array>
+    <!-- Address format -->
+    <string name="address_output_string">%1$s %2$s %3$s</string>
+
+    <!-- Latitude, longitude format -->
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+
+    <!-- Labels -->
+    <string name="latlng">Lat/Long:</string>
+    <string name="address">Address:</string>
+
+    <!-- Messages -->
+    <string name="connected">Client connected</string>
+    <string name="connection_error_code_unknown">Unknown connection error code:  %1$d</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="disconnected">Client disconnected</string>
+    <string name="get_address">Get Address</string>
+    <string name="get_location">Get Location</string>
+    <string name="illegal_argument_exception">Illegal arguments: Latitude %1$.8f Longitude %2$.8f</string>
+    <string name="invalid_action">Invalid intent action %1$s</string>
+    <string name="invalid_integer_id">Invalid integer request ID: %1$s</string>
+    <string name="IO_Exception_getFromLocation">IO Exception in Geocoder.getFromLocation()</string>
+    <string name="location_requested">Periodic updates requested</string>
+    <string name="location_updated">Location updated</string>
+    <string name="location_update_error">Location update failed</string>
+    <string name="location_update_error_detail">Location update error. code %1$d message %2$s</string>
+    <string name="location_update_missing_update">Location update error. No incoming location.</string>
+    <string name="location_updates_stopped">Periodic updates stopped</string>
+    <string name="log_new_location">New location: %1$s</string>
+    <string name="no_address_found">No address found for location</string>
+    <string name="no_connection">No connection: Cannot request location</string>
+    <string name="no_geocoder_available">Cannot get address. No geocoder available.</string>
+    <string name="no_location_available">Location not available</string>
+    <string name="resolved">Error resolved. Please re-try operation.</string>
+    <string name="no_resolution">Google Play services: unable to resolve connection error.</string>
+    <string name="periodic_update_stop">Stopping periodic updates</string>
+    <string name="play_services_available">Google Play services is available</string>
+    <string name="request_location_updates_in_progress">Can\'t request location updates, previous request hasn\'t finished</string>
+    <string name="start_updates">Start Updates</string>
+    <string name="stop_updates">Stop Updates</string>
+    <string name="unknown">--Unknown--</string>
+    <string name="unknown_activity_request_code">Received an unknown activity request code %1$d in onActivityResult.</string>
+    <string name="location_timeout">Please check if location is enabled.</string>
+
+
+    <string name="no_network_overlay_message">No network</string>
+    <string name="no_network_overlay_action">Tap to refresh</string>
+    <string name="no_network_message">No network, please try again later!</string>
+    <string name="network_available_message">Network connected</string>
+    <string name="title_address">Adresa :</string>
+    <string name="content_address">Bdul. Dacia, nr. 153 - 155, sector 2, Bucuresti</string>
+    <string name="title_telfax">Tel/Fax :</string>
+    <string name="content_telfax">031 432 99 96</string>
+    <string name="title_mail">Email :</string>
+    <string name="content_mail">contact@zebrapay.ro</string>
+    <string name="title_call">Call center :</string>
+    <string name="content_call_center">031 439 40 99</string>
+
+
+</resources>

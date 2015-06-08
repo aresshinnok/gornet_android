@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+    
+<!--
+	NOTICE:
+
+	A complete list of globally scoped configuration values that can be specified:
+		- ga_appName(string) 			- name of application. Defaults to value found in the package.
+	 	- ga_appVersion(string) 		- version of application. Defaults to value found in the package.
+		- ga_dispatchPeriod(integer) 	- frequency of automatic dispatch (in seconds). Default is 1800.
+		- ga_dryRun(bool) 				- if true, enable dry run mode. Default is false.
+		- ga_logLevel(string) 			- One of "verbose", "info", "warning", "error".
+	 
+	Documentation url: https://developer.android.com/reference/com/google/android/gms/analytics/GoogleAnalytics.html.
+	Check all available parameters at https://developers.google.com/analytics/devguides/collection/android/v4/parameters.
+-->
+    
+  	<!-- Frequency of automatic dispatch in seconds. Defaults to 30 minutes (1800 seconds). -->
+    <integer name="ga_dispatchPeriod">5</integer>
+    
+    <!-- The verbosity of the SDK logger. Valid values from least to most verbose are: error, warning, info and verbose. Log level is set to warning by default. -->
+  	<string name="ga_logLevel">warning</string>
+  	
+    <!-- If true, enable dry run mode. Default is false. In dry run mode, the normal code paths are executed locally, 
+    	 but hits are not sent to Google Analytics servers. This is useful for debugging calls 
+    	 to the Google Analytics SDK without polluting recorded data. -->
+  	<bool name="ga_dryRun">true</bool>
+    
+</resources>
