@@ -30,7 +30,7 @@ public class NearMeMapActivity extends BaseActivity{
 
             if (getSupportActionBar() != null) {
                 getSupportActionBar().setDisplayShowHomeEnabled(true);
-                getSupportActionBar().setTitle(getResources().getStringArray(R.array.menu_titles)[Constants.MENU_IDX_NEAR_LOCATIONS]);
+                getSupportActionBar().setTitle(getResources().getStringArray(R.array.menu_titles)[Constants.MENU_IDX_MAP]);
                 //show left menu arrow
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             }

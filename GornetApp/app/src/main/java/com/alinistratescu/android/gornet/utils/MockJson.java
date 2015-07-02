@@ -5,6 +5,39 @@ package com.alinistratescu.android.gornet.utils;
  */
 public class MockJson {
 
+        public static String mockRoutesJs = "[  \n" +
+                "   {  \n" +
+                "      \"id\":1,\n" +
+                "      \"plecare\":\"10:20\",\n" +
+                "      \"sosire\":\"11:00\",\n" +
+                "      \"durata\":\"40\"\n" +
+                "   },\n" +
+                "   {  \n" +
+                "      \"id\":2,\n" +
+                "      \"plecare\":\"12:20\",\n" +
+                "      \"sosire\":\"13:00\",\n" +
+                "      \"durata\":\"40\"\n" +
+                "   },\n" +
+                "   {  \n" +
+                "      \"id\":3,\n" +
+                "      \"plecare\":\"14:30\",\n" +
+                "      \"sosire\":\"15:10\",\n" +
+                "      \"durata\":\"40\"\n" +
+                "   },\n" +
+                "   {  \n" +
+                "      \"id\":4,\n" +
+                "      \"plecare\":\"17:00\",\n" +
+                "      \"sosire\":\"17:40\",\n" +
+                "      \"durata\":\"40\"\n" +
+                "   },\n" +
+                "   {  \n" +
+                "      \"id\":5,\n" +
+                "      \"plecare\":\"19:00\",\n" +
+                "      \"sosire\":\"19:40\",\n" +
+                "      \"durata\":\"40\"\n" +
+                "   }\n" +
+                "]";
+
     public static String mockJS = "[  \n" +
             "   {  \n" +
             "      \"id\":110,\n" +

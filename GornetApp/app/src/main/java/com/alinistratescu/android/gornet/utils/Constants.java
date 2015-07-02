@@ -9,12 +9,24 @@ public class Constants {
     // Package name
     public static final String BASE_PACKAGE_NAME = BuildConfig.APPLICATION_ID;
 
-    public static final int MENU_COUNT = 4;
+    public static final int MENU_COUNT = 16;
 
-    public static final int MENU_IDX_SERVICES = 0;
-    public static final int MENU_IDX_NEAR_LOCATIONS = 1;
-    public static final int MENU_IDX_MAP = 2;
-    public static final int MENU_IDX_CONTACT = 3;
+    public static final int MENU_IDX_INFO = 0;
+    public static final int MENU_IDX_NOTIFICATION = 1;
+    public static final int MENU_IDX_NEWS = 2;
+    public static final int MENU_IDX_BUY_SELL = 3;
+    public static final int MENU_IDX_MAP = 4;
+    public static final int MENU_IDX_PRODUCT_OF_THE_DAY = 5;
+    public static final int MENU_IDX_EVENTS = 6;
+    public static final int MENU_IDX_GALLERY = 7;
+    public static final int MENU_IDX_OTHER_GORNET = 8;
+    public static final int MENU_IDX_CONTACT = 9;
+    public static final int MENU_IDX_PLACE_TO_SEE = 10;
+    public static final int MENU_IDX_SOCCER_TEAM = 11;
+    public static final int MENU_IDX_WEATHER = 12;
+    public static final int MENU_IDX_TRANSPORT = 13;
+    public static final int MENU_IDX_HOLLYDAY = 14;
+    public static final int MENU_IDX_PROFILE = 15;
 
     // Application log tag
     public static final String TAG = "GORNET";
@@ -34,8 +46,8 @@ public class Constants {
 
     public static final String PREFS_SETTINGS_LAST_TITLE = "LAST_TITLE";
 
-    public static final double BUCHAREST_FAKE_KM_0_LATITUDE = 44.436415;
-    public static final double BUCHAREST_FAKE_KM_0_LONGITUDE = 26.102482;
+    public static final double BUCHAREST_FAKE_KM_0_LATITUDE = 45.118625;
+    public static final double BUCHAREST_FAKE_KM_0_LONGITUDE = 26.078104;
     public static final int DEFAULT_ZOOM_LEVEL = 15;
     public static final int CUSTOM_ZOOM_LEVEL = 7;
 
@@ -48,4 +60,7 @@ public class Constants {
     public static final String LOCATION_URL = "http://alinistratescu.com";
     public static final String FEED_URL = "https://";
     public static final String BASE_PICTURE_URL = "http://alinistratescu.com/";
+
+    public static final String TRANSPORT_URL_INTORS = "http://www.autogari.ro/Transport/Ploiesti-Gornet";
+    public static final String TRANSPORT_URL_DUS = "http://www.autogari.ro/Transport/Gornet-Ploiesti";
 }

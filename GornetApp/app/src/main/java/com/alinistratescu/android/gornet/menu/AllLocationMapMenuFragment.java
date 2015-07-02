@@ -106,7 +106,7 @@ public class AllLocationMapMenuFragment extends BaseFragment implements CustomMa
         if (getArguments() != null) {
             currenTerminalLocations = getArguments().getParcelableArrayList(Constants.ARG_NEW_REQUEST_CLIENT_LOCATION);
         }
-        currenTerminalLocations = new ArrayList<>(DatabaseUtils.getLocationsList(getActivity()));
+        //currenTerminalLocations = new ArrayList<>(DatabaseUtils.getLocationsList(getActivity()));
 
 
         try {
@@ -320,7 +320,7 @@ public class AllLocationMapMenuFragment extends BaseFragment implements CustomMa
         mMap.setOnMarkerClickListener(mClusterManager);
 
         // Add cluster items (markers) to the cluster manager.
-        addItems();
+       // addItems();
     }
 
     private void addItems() {
@@ -345,8 +345,8 @@ public class AllLocationMapMenuFragment extends BaseFragment implements CustomMa
 
                 updateMarkerOnMap(location);
 
-                centerMapToLocation(new LatLng(location.getLatitude(), location.getLongitude()), Constants.CUSTOM_ZOOM_LEVEL);
-
+                //centerMapToLocation(new LatLng(location.getLatitude(), location.getLongitude()), Constants.CUSTOM_ZOOM_LEVEL);
+                centerMapToLocation(new LatLng(Constants.BUCHAREST_FAKE_KM_0_LATITUDE, Constants.BUCHAREST_FAKE_KM_0_LONGITUDE), Constants.DEFAULT_ZOOM_LEVEL);
 
 
             }

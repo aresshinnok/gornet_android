@@ -66,7 +66,8 @@ public class NavigationDrawerMenuListAdapter extends BaseAdapter {
 //            vh.separator.setVisibility(View.VISIBLE);
 //        }
         vh.separator.setVisibility(View.VISIBLE);
-        vh.ivMenuIcon.setImageResource(mContext.getResources().obtainTypedArray(R.array.nav_drawer_icons).getResourceId(position, -1));
+        //vh.ivMenuIcon.setImageResource(mContext.getResources().obtainTypedArray(R.array.nav_drawer_icons).getResourceId(position, -1));
+        vh.ivMenuIcon.setVisibility(View.GONE);
 //        /**
 //         * add images only for first 3 items
 //         */

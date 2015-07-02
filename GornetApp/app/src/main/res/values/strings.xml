@@ -1,15 +1,27 @@
 <resources>
-    <string name="app_name">ZebraPay</string>
+    <string name="app_name">Gornet Village</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
 
     <string-array name="menu_titles">
-        <item>Servicii</item>
-        <item>Langa mine</item>
-        <item>Harta</item>
+        <item>Info</item>
+        <item>Sesizari</item>
+        <item>Noutati</item>
+        <item>Vand/Cumpar</item>
+        <item>Harta Gornet</item>
+        <item>Produsul zilei</item>
+        <item>Evenimente</item>
+        <item>Galerie</item>
+        <item>Gornetul altfel</item>
         <item>Contact</item>
+        <item>Obiective turistice</item>
+        <item>Echipa Localitatii</item>
+        <item>Prognoza meteo</item>
+        <item>Transport in comun</item>
+        <item>Locuri de vacanta vizitate de tine</item>
+        <item>Profilul meu</item>
     </string-array>
 
     <string name="press_again_to_exit">Mai apasă o dată pentru a ieși</string>

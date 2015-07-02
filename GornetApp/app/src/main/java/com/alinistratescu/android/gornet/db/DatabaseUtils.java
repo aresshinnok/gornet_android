@@ -8,6 +8,7 @@ import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteException;
 
+import com.alinistratescu.android.gornet.db.models.BusTransportModel;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.alinistratescu.android.gornet.db.models.FeedItemModel;
 import com.alinistratescu.android.gornet.db.models.StoreLocationModel;
@@ -168,4 +169,35 @@ public abstract class DatabaseUtils {
             deleteLocationItem(context, location);
         }
     }
+
+    //returns all routes
+    public static List<BusTransportModel> getRoutesList(Context context) {
+
+        final DatabaseHelper helper = DatabaseManager.getInstance(context).getHelper();
+
+        try {
+            QueryBuilder<BusTransportModel, Integer> busTransportModelIntegerQueryBuilder = helper.getBusTransportModelsRuntimeDao().queryBuilder();
+            // feedItemQueryBuilder.where();
+            return busTransportModelIntegerQueryBuilder.query();
+        } catch (java.sql.SQLException | SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    //saves routes
+    public static void saveRoutes(Context context, List<BusTransportModel> routes) {
+        DatabaseHelper helper = DatabaseManager.getInstance(context).getHelper();
+
+        try {
+            for (int i=0; i< routes.size(); i++){
+                helper.getBusTransportModelsRuntimeDao().createOrUpdate(routes.get(i));
+            }
+
+        } catch (SQLiteException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

@@ -31,6 +31,7 @@ import com.alinistratescu.android.gornet.menu.AllLocationMapMenuFragment;
 import com.alinistratescu.android.gornet.menu.ContactFragmentMenu;
 import com.alinistratescu.android.gornet.menu.NearMeLocationMenuFragment;
 import com.alinistratescu.android.gornet.menu.ServiceFragmentMenu;
+import com.alinistratescu.android.gornet.menu.TransportFragment;
 import com.alinistratescu.android.gornet.rest.ApiService;
 import com.alinistratescu.android.gornet.rest.RestClient;
 import com.alinistratescu.android.gornet.utils.Constants;
@@ -67,8 +68,8 @@ public class NavigationDrawerActivity extends BaseActivity implements LocationCh
         locationDelegate.onCreate(savedInstanceState);
         if (getSharedPreferences(Constants.PREFS_BASE, 0).getLong(Constants.PREFS_SETTINGS_DOWNLOADED_DB_TIME, 0L) + Constants.ONE_DAY_TIME_IN_MILIS < System.currentTimeMillis()) {
             //clears data
-            GornetApplication.getInstance().clearApplicationData();
-            getAllLocations();
+           // GornetApplication.getInstance().clearApplicationData();
+           // getAllLocations();
         }
 
         initViews();
@@ -150,17 +151,53 @@ public class NavigationDrawerActivity extends BaseActivity implements LocationCh
         // update the main content by replacing fragments
         Fragment fragment = null;
         switch (position) {
-            case Constants.MENU_IDX_SERVICES:
-                fragment = new ServiceFragmentMenu();
+            case Constants.MENU_IDX_INFO:
+                fragment = new Fragment();
                 break;
-            case Constants.MENU_IDX_NEAR_LOCATIONS:
-                fragment = new NearMeLocationMenuFragment();
+            case Constants.MENU_IDX_NOTIFICATION:
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_NEWS:
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_BUY_SELL:
+                fragment = new Fragment();
                 break;
             case Constants.MENU_IDX_MAP:
                 fragment = new AllLocationMapMenuFragment();
                 break;
+            case Constants.MENU_IDX_PRODUCT_OF_THE_DAY:
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_EVENTS:
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_GALLERY:
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_OTHER_GORNET:
+                fragment = new Fragment();
+                break;
             case Constants.MENU_IDX_CONTACT:
-                fragment = new ContactFragmentMenu();
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_PLACE_TO_SEE:
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_SOCCER_TEAM:
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_WEATHER:
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_TRANSPORT:
+                fragment = new TransportFragment();
+                break;
+            case Constants.MENU_IDX_HOLLYDAY:
+                fragment = new Fragment();
+                break;
+            case Constants.MENU_IDX_PROFILE:
+                fragment = new Fragment();
                 break;
 
             default:

@@ -7,6 +7,7 @@ package com.alinistratescu.android.gornet.db;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.alinistratescu.android.gornet.db.models.BusTransportModel;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.support.ConnectionSource;
@@ -22,12 +23,13 @@ import com.alinistratescu.android.gornet.db.models.StoreLocationModel;
  */
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper{
 
-    private static final String DB_NAME = "zebrapay.db3";
+    private static final String DB_NAME = "gornet.db3";
     private static final int DB_VERSION = 1;
 
     // cache
     private RuntimeExceptionDao<FeedItemModel, Integer> feedItemRuntimeDao;
     private RuntimeExceptionDao<StoreLocationModel, Integer> storeLocationRuntimeDao;
+    private RuntimeExceptionDao<BusTransportModel, Integer> busTransportModelsRuntimeDao;
 
 
 
@@ -41,6 +43,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper{
         try {
             TableUtils.createTable(connectionSource, FeedItemModel.class);
             TableUtils.createTable(connectionSource, StoreLocationModel.class);
+            TableUtils.createTable(connectionSource, BusTransportModel.class);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -59,6 +62,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper{
             // cache
             TableUtils.dropTable(connectionSource, FeedItemModel.class, false);
             TableUtils.dropTable(connectionSource, StoreLocationModel.class, false);
+            TableUtils.dropTable(connectionSource, BusTransportModel.class, false);
 
             // after we drop the old databases, we create the new ones
             onCreate(db, connectionSource);
@@ -98,6 +102,14 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper{
         return storeLocationRuntimeDao;
     }
 
+    public RuntimeExceptionDao<BusTransportModel, Integer> getBusTransportModelsRuntimeDao() {
+        if (busTransportModelsRuntimeDao == null) {
+            busTransportModelsRuntimeDao = getRuntimeExceptionDao(BusTransportModel.class);
+        }
+
+        return busTransportModelsRuntimeDao;
+    }
+
 
 
     public RuntimeExceptionDao<?, Integer> getDaoByClass(Class<?> daoClass) {
@@ -105,6 +117,8 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper{
             return getFeedItemDao();
         } else if (daoClass.equals(StoreLocationModel.class)) {
             return getStoreLocationDao();
+        }else if (daoClass.equals(BusTransportModel.class)) {
+            return getBusTransportModelsRuntimeDao();
         }
         else {
             return null;
