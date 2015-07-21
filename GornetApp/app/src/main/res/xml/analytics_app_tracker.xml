@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+    
+<!--
+    NOTICE:
+    
+    A complete list of tracker scoped configuration values that can be specified:
+		- ga_trackingId(string) 			- tracking Id to report against. Required
+		- ga_sampleFrequency(string) 		- sample rate to use. Default is 100.0. It can be any value between 0.0 and 100.0
+		- ga_autoActivityTracking(bool) 	- if true, views (Activities) will be tracked. Default is false.
+		- ga_anonymizeIp(bool) 				- if true, anonymizeIp will be set for each hit. Default is false.
+		- ga_reportUncaughtExceptions(bool) - if true, uncaught exceptions will be tracked. Default is false. 
+												NOTE: This value can only be set to true for a single Tracker. 
+												If specified for multiple Trackers, then the last one to be initialized will be used.
+		- ga_sessionTimeout(int) 			- time (in seconds) an app can stay in the background before a new session is started. 
+												Setting this to a negative number will result in a new session never being started. 
+												Default is 30 seconds.
+
+	If ga_autoActivityTracking is enabled, an alternate screen name can be specified to substitute for the full length canonical Activity name in screen view hit. In order to specify an alternate screen name use an <screenName> element, with the name attribute specifying the canonical name, and the value the alias to use instead.
+ 		<screenName name="com.google.foo.SampleActivity">Sample Activity</screenName> 
+    
+    Documentation url: https://developer.android.com/reference/com/google/android/gms/analytics/Tracker.html.
+    Check all available parameters at https://developers.google.com/analytics/devguides/collection/android/v4/parameters.
+-->
+    
+    <!-- The Google Analytics tracking ID to which to send your data. Dashes in the ID must be unencoded. You can disable your tracking by not providing this value. -->
+  	<string name="ga_trackingId">UA-12345678-9</string>
+  
+  	<!-- The amount of time (in seconds) your application can stay in the background before the session is ended. Default is 30 seconds. 
+  		 Negative value disables EasyTracker session management. -->
+    <integer name="ga_sessionTimeout">120</integer>
+    
+  	<!-- Automatically track an Exception each time an uncaught exception is thrown in your application. false by default.
+		 Note: This value can only be set to true for a single Tracker. If specified for multiple Trackers, 
+		 	   then the last one to be initialized will be used. -->
+  	<bool name="ga_reportUncaughtExceptions">true</bool>
+  	
+  	<!-- If true, views (Activities) will be tracked automatically. false by default.
+		 Caution: Review your configuration carefully when setting this value to true. 
+		 		  If another tracker object uses the same configuration with an identical tracking Id, 
+		 		  both trackers will send screen view hits, resulting in overcounting. -->
+    <bool name="ga_autoActivityTracking">false</bool>
+    
+
+    
+</resources>

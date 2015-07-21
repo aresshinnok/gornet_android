@@ -1,0 +1,80 @@
+#
+# generated on 2015/07/02 11:09:01
+#
+# --table-start--
+dataClass=com.alinistratescu.android.gornet.db.models.BusTransportModel
+tableName=bustransportmodel
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=plecare
+# --field-end--
+# --field-start--
+fieldName=durata
+# --field-end--
+# --field-start--
+fieldName=sosire
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.alinistratescu.android.gornet.db.models.FeedItemModel
+tableName=feeditems
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=sortOrder
+columnName=sort_order
+# --field-end--
+# --field-start--
+fieldName=pictureUrl
+columnName=picture_url
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.alinistratescu.android.gornet.db.models.StoreLocationModel
+tableName=locations
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=titlu
+# --field-end--
+# --field-start--
+fieldName=oras
+# --field-end--
+# --field-start--
+fieldName=adresa
+# --field-end--
+# --field-start--
+fieldName=latitudine
+# --field-end--
+# --field-start--
+fieldName=longitudine
+# --field-end--
+# --field-start--
+fieldName=distance
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

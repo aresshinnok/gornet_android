@@ -1,0 +1,40 @@
+<resources>
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+
+        <!--actionbar  color-->
+        <item name="colorPrimary">@color/blue_2a4d7a</item>
+        <!--navigation bar color-->
+        <item name="colorPrimaryDark">@color/blue_2a4d7a</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--actionbar hamburger color-->
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/colorControlActivated</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
+        <item name="colorSwitchThumbNormal">@color/colorSwitchThumbNormal</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--<style name="Theme.Test" parent="@style/Theme.AppCompat.Light">-->
+
+    <!--&lt;!&ndash; customize the color palette &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/red</item>-->
+    <!--<item name="colorPrimaryDark">@color/grey_text</item>-->
+    <!--<item name="colorAccent">@color/orangeFE</item>-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="drawerArrowStyle">@style/Theme.Test.DrawerArrowStyle</item>-->
+    <!--</style>-->
+
+    <!--<style name="Theme.Test.DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">-->
+    <!--<item name="spinBars">true</item>-->
+    <!--<item name="color">@android:color/white</item>-->
+    <!--</style>-->
+</resources>

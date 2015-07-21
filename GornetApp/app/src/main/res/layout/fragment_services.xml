@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_blue">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rlHeader"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/header">-->
+
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/logo"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_centerInParent="true"/>&ndash;&gt;-->
+            <!--</RelativeLayout>-->
+
+            <com.alinistratescu.android.gornet.views.GridViewWithHeaderAndFooter
+                android:id="@+id/gridItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="120dp"
+                android:gravity="center"
+                android:numColumns="2"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:listSelector="#00000000"
+                android:cacheColorHint="@android:color/transparent">
+            </com.alinistratescu.android.gornet.views.GridViewWithHeaderAndFooter>
+        <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+</RelativeLayout>
